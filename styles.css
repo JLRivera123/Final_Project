@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d6a4f !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/img2.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 106, 79, 0.6);
+}
+.products-section .card-img-top {
+    height: 250px; /* Set a uniform height */
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
+    width: 100%; /* Ensures all images take the full width of the card */
+    background-color: #f8f9fa; /* Optional: Adds a subtle background color if images don’t fully fill the space */
+    padding: 10px; /* Optional: Adds spacing around the image to keep aspect ratio intact */
+}
+/* Founder Image Styling */
+.founder-img {
+    max-width: 100%; /* Ensures responsiveness */
+    width: 50%; /* Matches paragraph width more closely */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+
+
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #40916c;
+    border-color: #40916c;
+}
+
+.btn-primary:hover {
+    background-color: #1b4332;
+    border-color: #1b4332;
+}
+
+/* About Page Content */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* FAQs */
+.accordion-button {
+    background-color: white !important; 
+    color: black !important;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2d6a4f !important; 
+    color: white !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important; 
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1rem; 
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    font-size: 1.1rem; 
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Order Form Styling */
+ #checkoutPage .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#checkoutPage .form-check input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#checkoutPage .quantity {
+    width: 110px; 
+    margin-left: 10px;
+}
+
+#checkoutPage .form-check label {
+    flex-grow: 1; 
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Contact Info Styling */
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info ul li {
+    font-size: 1.1rem; 
+    padding: 5px 0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 3px 0; /* Ensures proper spacing between lines */
+}

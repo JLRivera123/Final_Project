@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>KCO | Checkout</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	</head>
+	<body>
+		<header class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a class="navbar-brand" href="Home.html">KCO - Kangkong Chips Original</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+						<li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+						<li class="nav-item"><a class="nav-link active" href="checkout.html">Checkout</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero text-center">
+			<div class="overlay"></div>
+			<div class="container position-relative">
+				<h1>Checkout</h1>
+				<p>Almost done! Complete your purchase quickly and securely on our Checkout page and get ready to enjoy your order!</p>
+			</div>
+		</section>
+
+		<div class="container my-5" id="checkoutPage">
+			<div class="contact-form bg-light p-4 rounded shadow-sm">
+				<form action="https://formspree.io/f/mjkgnqbk" method="POST">
+					<h2>Customer Information</h2>
+					<div class="mb-3">
+						<label for="fullName" class="form-label">Full Name</label>
+						<input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required />
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Email Address</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required />
+					</div>
+					<div class="mb-3">
+						<label for="phone" class="form-label">Phone Number</label>
+						<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required />
+					</div>
+					<div class="mb-3">
+						<label for="address" class="form-label">Shipping Address</label>
+						<textarea class="form-control" id="address" name="address" rows="4" placeholder="Enter your shipping address" required></textarea>
+					</div>
+
+					<h2>Select Products</h2>
+					<div class="mb-3">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="products" value="classic" id="classic" />
+							<label class="form-check-label" for="classic">Classic Kangkong Chips ( ₱130 )</label>
+							<input type="number" class="form-control quantity" name="classicQty" id="classicQty" placeholder="Qty" min="1" />
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="products" value="spicy" id="spicy" />
+							<label class="form-check-label" for="spicy">Spicy Kangkong Chips ( ₱130 )</label>
+							<input type="number" class="form-control quantity" name="spicyQty" id="spicyQty" placeholder="Qty" min="1" />
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="products" value="cheese" id="cheese" />
+							<label class="form-check-label" for="cheese">Cheese Kangkong Chips ( ₱140 )</label>
+							<input type="number" class="form-control quantity" name="cheeseQty" id="cheeseQty" placeholder="Qty" min="1" />
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="products" value="bbq" id="bbq" />
+							<label class="form-check-label" for="bbq">BBQ Kangkong Chips ( ₱140 )</label>
+							<input type="number" class="form-control quantity" name="bbqQty" id="bbqQty" placeholder="Qty" min="1" />
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="products" value="spicyCheese" id="spicyCheese" />
+							<label class="form-check-label" for="spicyCheese">Spicy Cheese Kangkong Chips ( ₱140 )</label>
+							<input type="number" class="form-control quantity" name="spicyCheeseQty" id="spicyCheeseQty" placeholder="Qty" min="1" />
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="products" value="sourCream" id="sourCream" />
+							<label class="form-check-label" for="sourCream">Sour Cream Kangkong Chips ( ₱140 )</label>
+							<input type="number" class="form-control quantity" name="sourCreamQty" id="sourCreamQty" placeholder="Qty" min="1" />
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary w-100">Complete Purchase</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
